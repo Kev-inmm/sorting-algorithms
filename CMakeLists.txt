@@ -3,4 +3,6 @@ project(sorting_algorithms)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(sorting_algorithms main.cpp)
+add_executable(sorting_algorithms main.cpp
+        algorithms/SelectionSort/Selection.cpp
+        algorithms/SelectionSort/Selection.h)
