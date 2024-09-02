@@ -27,8 +27,36 @@ for(int i = size; i > 1; i = i-1 ){
 }
 }
 
-void Bubble::bubbleSortB(int arr[], int size) {
+/*
+ * https://de.wikipedia.org/wiki/Bubblesort
+ *
+ * bubbleSort2(Array A)
+  n = A.size
+  do { // äußere Schleife
+    swapped = false
+    for (i = 0; i < n - 1; i = i + 1) { // innere Schleife
+      if (A[i] > A[i + 1]) {
+        A.swap(i, i + 1)
+        swapped = true
+      }
+    }
+    n = n - 1
+  } while (swapped)
+ */
 
+void Bubble::bubbleSortB(int arr[], int size) {
+int n = size;
+bool swapped;
+do{
+    swapped = false;
+    for(int i = 0; i < n-1; i = i + 1){
+        if(arr[i] > arr[i+1]){
+            std::swap(arr[i], arr[i + 1]);
+            swapped = true;
+        }
+    }
+    n = n-1;
+}while(swapped);
 }
 
 void Bubble::displayArray(int arr[], int size) {
