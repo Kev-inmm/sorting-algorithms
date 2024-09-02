@@ -13,3 +13,8 @@ void Selection::selectionSort(int arr[], int size) {
         }
     }
 }
+
+void Selection::displayArray(int arr[], int size) {
+    std::cout << "Selectionsort: " << std::endl;
+    SortAlgorithm::displayArray(arr, size);
+}

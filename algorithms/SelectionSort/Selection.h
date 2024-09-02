@@ -10,6 +10,7 @@
 class Selection : public SortAlgorithm{
 public:
     static void selectionSort(int[], int);
+    static void displayArray(int[], int);
 };
 
 

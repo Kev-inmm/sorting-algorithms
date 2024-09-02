@@ -10,7 +10,9 @@
 
 class Bubble : public SortAlgorithm {
 public:
-    static void bubbleSort(int[], int);
+    static void bubbleSortA(int[], int);
+    static void bubbleSortB(int[], int);
+    static void displayArray(int[], int);
 };
 
 
