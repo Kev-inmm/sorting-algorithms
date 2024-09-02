@@ -5,12 +5,11 @@
 #ifndef SORTING_ALGORITHMS_SELECTION_H
 #define SORTING_ALGORITHMS_SELECTION_H
 
-#include "iostream";
+#include "../SortAlgorithm.h"
 
-class Selection {
+class Selection : public SortAlgorithm{
 public:
-static void selectionSort(int[], int);
-static void displayArray(int[], int);
+    static void selectionSort(int[], int);
 };
 
 

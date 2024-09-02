@@ -1,14 +1,13 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 #include "algorithms/SelectionSort/Selection.h"
 
 int main() {
-    int array[] = {5,2,78,3,1,0};
 
-    std::cout<<"Unsorted Array : ";
-    Selection::displayArray(array, 5);
+    int* array = SortAlgorithm::createArray(10, true);
 
-    Selection::selectionSort(array,5);
-    std::cout<<"Sorted Array : ";
-    Selection::displayArray(array, 5);
+    Selection::selectionSort(array, 10);
+    SortAlgorithm::displayArray(array, 10);
 }
