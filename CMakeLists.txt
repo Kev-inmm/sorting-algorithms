@@ -9,4 +9,6 @@ add_executable(sorting_algorithms main.cpp
         algorithms/BubbleSort/Bubble.cpp
         algorithms/BubbleSort/Bubble.h
         algorithms/SortAlgorithm.cpp
-        algorithms/SortAlgorithm.h)
+        algorithms/SortAlgorithm.h
+        algorithms/MergeSort/Merge.cpp
+        algorithms/MergeSort/Merge.h)
